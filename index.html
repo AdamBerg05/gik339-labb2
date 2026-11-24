@@ -1,0 +1,101 @@
+
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Labb 2</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f4fa;
+            margin: 40px;
+            color: #263248;
+        }
+
+        h1 {
+            color: #355c9a;
+        }
+
+        label {
+            font-weight: bold;
+        }
+
+        input {
+            padding: 9px;
+            border: 1px solid #b8c7dc;
+            border-radius: 6px;
+            margin-left: 8px;
+            transition: 0.2s;
+        }
+
+        input:focus {
+            outline: none;
+            border-color: #5686d6;
+            box-shadow: 0 0 5px #9bbcf0;
+        }
+
+        button {
+            padding: 10px 18px;
+            background-color: #527fc2;
+            color: white;
+            border: none;
+            border-radius: 7px;
+            cursor: pointer;
+            transition: 0.2s;
+        }
+
+        button:hover {
+            background-color: #9b3131;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 8px #ff79c3;
+        }
+
+        #outputDiv {
+            width: 300px;
+            min-height: 100px;
+            background-color: white;
+            border: 2px solid #9bb2d1;
+            border-radius: 10px;
+            margin-top: 10px;
+            padding: 12px;
+            transition: 0.3s;
+        }
+
+        #outputDiv:hover {
+            border-color: #527fc2;
+            box-shadow: 0 4px 12px #c4d3e8;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Labb 2</h1>
+
+    <label for="color">Färg:</label>
+    <input type="text" name="color" id="color" class="textfield">
+
+    <br><br>
+
+    <label for="content">Innehåll:</label>
+    <input type="text" name="content" id="content" class="textfield">
+
+    <br><br>
+
+    <label for="divStyle">Stil på box:</label>
+    <input type="checkbox" name="divStyle" id="divStyle" class="checkbox">
+
+    <br><br>
+
+    <button type="button" id="removeButton">Ta bort</button>
+
+    <br><br>
+
+    <div id="outputDiv"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
